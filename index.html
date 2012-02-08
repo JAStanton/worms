@@ -1,0 +1,22 @@
+<html>
+<head>
+	<title>Worms / Tanks HTML5 Pixel Perfect Destructible Terrain</title>
+	<script src="Stats.js" type="text/javascript" charset="utf-8"></script>
+	<script src="script.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<body onload="WORMS.init();">
+	<canvas width="1000" height="800" id="surface"></canvas>
+	
+	
+	<script type="text/javascript" charset="utf-8">
+		var stats = new Stats();
+
+		// Align top-left
+		stats.getDomElement().style.position = 'absolute';
+		stats.getDomElement().style.left = '0px';
+		stats.getDomElement().style.top = '0px';
+
+		document.body.appendChild( stats.getDomElement() );
+	</script>
+</body>
+</html>
